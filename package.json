@@ -1,0 +1,27 @@
+{
+  "name": "fortheyin.com",
+  "version": "0.0.1",
+  "description": "Personal website for the Yin.",
+  "main": "server/app.js",
+  "scripts": {
+    "start": "node server/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ForTheYin/fortheyin.com.git"
+  },
+  "keywords": [
+    "personal",
+    "website"
+  ],
+  "author": "Andy Yin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ForTheYin/fortheyin.com/issues"
+  },
+  "homepage": "https://github.com/ForTheYin/fortheyin.com#readme",
+  "dependencies": {
+    "express": "^4.13.2"
+  }
+}
