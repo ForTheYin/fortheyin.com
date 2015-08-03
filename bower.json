@@ -1,0 +1,15 @@
+{
+  "name": "fortheyin.com",
+  "version": "0.0.0",
+  "homepage": "https://github.com/ForTheYin/fortheyin.com",
+  "authors": [
+    "Andy Yin <dev@fortheyin.com>"
+  ],
+  "description": "Personal website.",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "angular": "~1.4.3",
+    "angular-animate": "~1.4.3"
+  }
+}
