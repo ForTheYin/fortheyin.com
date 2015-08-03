@@ -1,11 +1,5 @@
 var express = require('express');
 var app = express();
+var config = require('./config');
 
-/*
-app.get('/', function (req, res) {
-	res.send('Hello World');
-});
-*/
-
-app.use(express.static('public'));
-app.listen(9000);
+config(app);

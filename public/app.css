@@ -1,0 +1,8 @@
+body {
+  background-color: #000;
+}
+
+.terminal-text {
+  color: #3EE440;
+  font-family: 'Andale Mono', 'Ubuntu Mono', 'Courier New', monospace;
+}
