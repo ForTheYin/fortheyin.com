@@ -3,20 +3,35 @@ body {
 }
 
 .terminal {
-  display: inline;
-  font-family: 'Andale Mono', 'Ubuntu Mono', 'Courier New', monospace;
+  color: #3EE440;
+  font-family: 'Consolas', 'Andale Mono', 'Courier New', monospace;
 }
 
 .terminal-text {
-  color: #3EE440;
+  display: inline;
+}
+.terminal-section {
+  display: block;
+  margin-top: 15px;
+}
+.terminal-section-text {
+  display: block;
+  margin-left: 5%;
 }
 
 .terminal-text-inverse {
+  display: inline;
   color: #000;
   background-color: #3EE440;
 }
 
-.terminal-block {
-  color: #3EE440;
+.terminal-rectangle {
+  display: inline;
+  background-color: #3EE440;
+}
+
+.terminal-heading {
+  display: block;
+  color: #000;
   background-color: #3EE440;
 }

@@ -1,18 +1,49 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- Style -->
+    <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu+Mono">
     <link rel="stylesheet" type="text/css" href="/components/css/app.css">
   </head>
 
   <body>
-    <div class="container">
-      <span id="terminal-text" class="terminal terminal-text"></span><span id="terminal-block" class="terminal terminal-block"></span>
+    <div id="repl" class="hidden terminal container">
+      <span class="terminal-text"></span>
+      <span class="terminal-rectangle"></span>
     </div>
 
-    <!-- Scripts -->
+    <div id="manpage" class="terminal container">
+      <div class="row">
+        <div class="terminal-heading col-xs-4 text-left">FORTHEYIN(1)</div>
+        <div class="terminal-heading col-xs-4 text-center">ANDY YIN</div>
+        <div class="terminal-heading col-xs-4 text-right">FORTHEYIN(1)</div>
+      </div>
+
+      <div class="row">
+        <div class="terminal-section">
+          <strong>NAME</strong>
+          <div class="terminal-section-text">
+            <p><strong>fortheyin</strong> -- Legally <strong>Zijian Yin</strong>, preferably <strong>Andy Yin</strong></p>
+          </div>
+        </div>
+
+        <div class="terminal-section">
+          <strong>SYNPOSIS</strong>
+          <div class="terminal-section-text">
+            <p><strong>fortheyin [-e | --email] [-c | --cell]</strong></p>
+          </div>
+        </div>
+
+        <div class="terminal-section">
+          <strong>DESCRIPTION</strong>
+          <div class="terminal-section-text">
+            <p>Full-stack web developer, hobbyist game developer.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS -->
     <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="/app/app.js"></script>
   </body>
