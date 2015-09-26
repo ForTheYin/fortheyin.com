@@ -7,33 +7,35 @@
     output: '.terminal-text',
     cursor: '.terminal-rectangle'
   };
+  var flickering = null;
 
   $( document ).ready(function () {
-    $( elements.repl ).removeClass('hidden');
+    // Initialize terminal, if user has JS enabled
     $( elements.manpage ).addClass('hidden');
+    $( elements.repl ).removeClass('hidden');
 
-    $.ajax({
-      url: '/api/user',
-      success: function (data) {
-        defaultText = 'fortheyin ' + data.ip + '$ ';
-        $( elements.output ).text(defaultText);
-        addText('man fortheyin', 150, function () {
-          clearText();
-          $( elements.repl ).addClass('hidden');
-          $( elements.manpage ).removeClass('hidden');
-        });
-      }
-    });
+    // Set defaults
+    defaultText = 'fortheyin$ ';
+    $( elements.output ).text(defaultText);
 
-    // Flickering Input Bar
-    setInterval(function () {
+    // Initialize flickering input rectangle
+    flickering = setInterval(function () {
       var text = $( elements.cursor ).text() ? '' : '#';
       $( elements.cursor ).text(text);
     }, 500);
 
-    return;
-    // --- Console Manipulation Functions
+    // Initialize typing
+    addText('man fortheyin', 150, function () {
+      clearText();
 
+      clearInterval(flickering);
+      $( elements.repl ).addClass('hidden');
+      $( elements.manpage ).removeClass('hidden');
+    });
+
+    return;
+
+    // --- Console Manipulation Functions
     function addText (text, speed, callback) {
       speed = typeof speed === 'undefined' ? 200 : speed;
       var remaining = text;

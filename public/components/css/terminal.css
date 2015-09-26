@@ -1,0 +1,48 @@
+.terminal {
+  color: #3EE440;
+  font-family: 'Consolas', 'Andale Mono', 'Courier New', monospace;
+}
+
+.terminal-text { display: inline; }
+.terminal-text-inverse {
+  display: inline;
+  color: #000;
+  background-color: #3EE440;
+}
+
+.terminal-rectangle {
+  display: inline;
+  background-color: #3EE440;
+}
+
+.terminal-section {
+  display: block;
+  padding-top: 10px;
+}
+.terminal-section-text {
+  display: block;
+  margin-left: 5%;
+}
+
+
+.terminal-header {
+  padding-bottom: 25px;
+}
+.terminal-heading {
+  display: block;
+  float: left;
+  width: 33.33333333%;
+
+  margin: 0 -10px;
+  padding: 0 10px;
+  color: #000;
+  background-color: #3EE440;
+}
+
+.terminal-table td {
+  vertical-align: top;
+  padding-right: 20px;
+}
+.terminal-options-table td {
+  padding-bottom: 10px;
+}

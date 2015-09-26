@@ -1,9 +1,29 @@
 <!DOCTYPE html>
+<!--
+  Hey Reader!
+
+  Congratulations on reading the source code. Not many people do that,
+  but you are an awesome person for doing so!
+
+  For backwards compatibility on older browsers and preventing flash of unstyled
+  content, I moved the JavaScript into the HEAD. I do enjoy the challenge of making
+  pages work properly on limited conditions. This website should render properly
+  when JavaScript is disabled, or on IE6+, but I do not endorse using IE6.
+
+  Thanks,
+
+  Andy Yin
+-->
 <html>
   <head>
+    <title>ForTheYin - Andy Yin</title>
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="/components/css/app.css">
+    <link rel="stylesheet" type="text/css" href="/components/css/terminal.css">
+
+    <!-- JS -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="/app/app.js"></script>
   </head>
 
   <body>
@@ -13,10 +33,10 @@
     </div>
 
     <div id="manpage" class="terminal container">
-      <div class="row">
-        <div class="terminal-heading col-xs-4 text-left">FORTHEYIN(1)</div>
-        <div class="terminal-heading col-xs-4 text-center">ANDY YIN</div>
-        <div class="terminal-heading col-xs-4 text-right">FORTHEYIN(1)</div>
+      <div class="row terminal-header">
+        <div class="terminal-heading text-left">FORTHEYIN(1)</div>
+        <div class="terminal-heading text-center">ANDY YIN</div>
+        <div class="terminal-heading text-right">FORTHEYIN(1)</div>
       </div>
 
       <div class="row">
@@ -34,15 +54,15 @@
               <tr>
                 <td><strong>fortheyin</strong></td>
                 <td>
-                  <span class="no-wrap">[-c | --cell]</span>
-                  <span class="no-wrap">[-e | --email]</span>
-                  <span class="no-wrap">[-g | --github]</span>
-                  <span class="no-wrap">[-p | --projects]</span>
-                  <span class="no-wrap">[-e | --education]</span>
-                  <span class="no-wrap">[-m | --miscellaneous]</span>
-                  <span class="no-wrap">[-w | --work-experience]</span>
-                  <span class="no-wrap">[-t | --technical-skills]</span>
-                  <span class="no-wrap">[-r | --resume]</span>
+                  <span class="text-nowrap">[-c | --cell]</span>
+                  <span class="text-nowrap">[-e | --email]</span>
+                  <span class="text-nowrap">[-g | --github]</span>
+                  <span class="text-nowrap">[-p | --projects]</span>
+                  <span class="text-nowrap">[-e | --education]</span>
+                  <span class="text-nowrap">[-m | --misc]</span>
+                  <span class="text-nowrap">[-w | --work]</span>
+                  <span class="text-nowrap">[-t | --technical]</span>
+                  <span class="text-nowrap">[-r | --resume]</span>
                 </td>
               </tr>
             </table>
@@ -70,7 +90,7 @@
                 <td>me@fortheyin.com</td>
               </tr>
               <tr>
-                <td>-g, --GitHub</td>
+                <td>-g, --github</td>
                 <td><a href="https://github.com/ForTheYin">ForTheYin</a></td>
               </tr>
               <tr>
@@ -80,32 +100,32 @@
                   <a href="https://github.com/ForTheYin/GI-JAM-W15">Frenzno Feakency: Original Unity3D Game</a></td>
               </tr>
               <tr>
-                <td>-e, --education</td>
+                <td class="text-nowrap">-e, --education</td>
                 <td>
                   3A Computer Science <br>
                   University of Waterloo, Student ID: 20507203
                 </td>
               </tr>
               <tr>
-                <td>-m, --miscellaneous</td>
+                <td>-m, --misc</td>
                 <td>
                   Hack the North Mentor (2015) <br>
                   Winner of Kik Hackathon (2015)</td>
               </tr>
               <tr>
-                <td>-w, --work-experience</td>
+                <td>-w, --work</td>
                 <td>
-                  Web Developer @ Kik Interactive, Inc. <br>
-                  CS 135 Instructional Support Assistant @ University of Waterloo
+                  Web Developer <span class="red">@ Kik Interactive, Inc.</span> <br>
+                  CS 135 Instructional Support Assistant <span class="red">@ University of Waterloo</span>
                 </td>
               </tr>
               <tr>
-                <td>-t, --technical-skills</td>
+                <td>-t, --technical</td>
                 <td>
-                  <p>Programming Languages: C, C++, C#, PHP, Java, Python, Racket, JavaScript </p>
-                  <p>Frameworks &amp; Other Technical Skills: CSS, HTML, jQuery, Node.js, Express.js, AngularJS, MySQL, MongoDB, PostgreSQL, Bootstrap, Photoshop, Regular Expressions </p>
-                  <p>Operating Systems: Windows, OS X, Ubuntu, CentOS</p>
-                  <p>Communication &amp; Languages: English, Mandarin (spoken only)</p>
+                  <p><span class="orange">Programming Languages:</span> C, C++, C#, PHP, Java, Python, Racket, JavaScript </p>
+                  <p><span class="orange">Frameworks &amp; Other Technical Skills:</span> CSS, HTML, jQuery, Node.js, Express.js, AngularJS, MySQL, MongoDB, PostgreSQL, Bootstrap, Photoshop, Regular Expressions </p>
+                  <p><span class="orange">Operating Systems:</span> Windows, OS X, Ubuntu, CentOS</p>
+                  <p><span class="orange">Communication &amp; Languages:</span> English, Mandarin (spoken only)</p>
                 </td>
               </tr>
               <tr>
@@ -117,9 +137,5 @@
         </div>
       </div>
     </div>
-
-    <!-- JS -->
-    <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="/app/app.js"></script>
   </body>
 </html>
