@@ -10,6 +10,12 @@
   var flickering = null;
 
   $( document ).ready(function () {
+    // Only show the intro screen once
+    if (document.cookie === 'visited=true') {
+      return;
+    }
+    document.cookie = 'visited=true'
+
     // Initialize terminal, if user has JS enabled
     $( elements.manpage ).addClass('hidden');
     $( elements.repl ).removeClass('hidden');
