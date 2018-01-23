@@ -8,8 +8,9 @@ body {
 }
 
 p { margin-top: 0; }
-.red { color: #F00; }
+.red { color: #FF0000; }
 .orange { color: #FFA500; }
+.dark-green { color: #00B330; }
 .hidden { display: none !important; }
 .text-nowrap { white-space: nowrap; }
 .text-left { text-align: left; }
@@ -25,6 +26,10 @@ p { margin-top: 0; }
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.no-style-link {
+  text-decoration: none;
 }
 
 table {
